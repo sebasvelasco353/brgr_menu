@@ -11,6 +11,7 @@ body{
     width: 80px;
     height: 80px;
     cursor: pointer;
+    z-index: 1;
 }
 .brgr.active .line{
     background: rgba(0, 0, 0, 0);
@@ -46,4 +47,27 @@ body{
 }
 .line:after{
     top: 16px; 
+}
+
+#menu{
+    width: 80px;
+    height: 150px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: powderblue;
+    z-index: 0;
+}
+#menu a{
+    text-decoration: none;
+}
+#menu li{
+    list-style: none;
+}
+#menu .invisible{
+    visibility: hidden;
+}
+#menu .visible{
+    visibility: visible !important;
 }

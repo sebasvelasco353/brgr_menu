@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $('.brgr').click(function(){
-        $('.brgr').toggleClass('active'); 
-        $('#menu').toggleClass('visible');
-        $('#menu').toggleClass('invisible');
-    })
+        $('.brgr').toggleClass('active');
+        $('#menu').css('visibility', "visible");
+    });
 })

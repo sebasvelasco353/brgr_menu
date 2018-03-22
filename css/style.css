@@ -58,16 +58,14 @@ body{
     transform: translate(-50%, -50%);
     background: powderblue;
     z-index: 0;
+    visibility: hidden;
+}
+#menu .invisible{
+    visibility: hidden;
 }
 #menu a{
     text-decoration: none;
 }
 #menu li{
     list-style: none;
-}
-#menu .invisible{
-    visibility: hidden;
-}
-#menu .visible{
-    visibility: visible !important;
 }

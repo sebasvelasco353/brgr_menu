@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-color: black ;
 }
-.icon{
+.brgr{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -12,18 +12,18 @@ body{
     height: 80px;
     cursor: pointer;
 }
-.icon.active .brgr{
+.brgr.active .line{
     background: rgba(0, 0, 0, 0);
 }
-.icon.active .brgr:after{
+.brgr.active .line:after{
     top: 0;
     transform: rotate(45deg);
 }
-.icon.active .brgr:before{
+.brgr.active .line:before{
     top: 0;
     transform: rotate(-45deg);
 }
-.brgr{
+.line{
     width: 50px;
     height: 6px;
     background: #fff;
@@ -33,7 +33,7 @@ body{
     transform: translate(-50%, -50%);
     transition: .5s;
 }
-.brgr:before, .brgr:after{
+.line:before, .line:after{
     width: 50px;
     height: 6px;
     content: '';
@@ -41,9 +41,9 @@ body{
     background: #fff;
     transition: .5s;
 }
-.brgr:before{
+.line:before{
     top: -16px;
 }
-.brgr:after{
+.line:after{
     top: 16px; 
 }

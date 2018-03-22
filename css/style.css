@@ -52,23 +52,18 @@ nav{
     top: 10px; 
 }
 
-#menu{
-    width: 80px;
-    height: 150px;
+/* sidebar Menu */
+#sidebarMenu{
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: powderblue;
-    z-index: 0;
-    visibility: hidden;
+    margin-left: -400px;
+    height: 500px;
+    width: 250px;
+    background: #888;
 }
-#menu .invisible{
-    visibility: hidden;
+.activeSidebar{
+    transform: translateX(400px);
 }
-#menu a{
-    text-decoration: none;
-}
-#menu li{
-    list-style: none;
+.menuList{
+    margin: 0;
+    padding-top: 70px;
 }
